@@ -1,0 +1,139 @@
+/* -------------------------------------------------
+   Global resets & typography
+   ------------------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont,
+               "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background: #fafafa;
+}
+
+/* -----------------------------------------------
+   Layout helpers
+   ------------------------------------------------- */
+.container {
+  width: min(90%, 1200px);
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/* -------------------------------------------------
+   HERO SECTION
+   ------------------------------------------------- */
+.hero {
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+  background: #111;
+}
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 1rem;
+}
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: .5rem;
+}
+.tagline {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+.cta-btn {
+  background: #cfa35d;
+  color: #fff;
+  padding: .75rem 1.5rem;
+  border-radius: .25rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+.cta-btn:hover {
+  background: #b58a4e;
+}
+
+/* -------------------------------------------------
+   ABOUT SECTION
+   ------------------------------------------------- */
+.about {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.about p {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* -------------------------------------------------
+   CONTACT SECTION
+   ------------------------------------------------- */
+.contact {
+  background: #fff;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  border-radius: .5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,.1);
+}
+.contact h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.contact label {
+  display: block;
+  margin-bottom: 1rem;
+}
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: .75rem;
+  border: 1px solid #ccc;
+  border-radius: .25rem;
+  font: inherit;
+}
+.contact button {
+  width: 100%;
+  background: #cfa35d;
+  color: #fff;
+  border: none;
+  padding: .75rem;
+  border-radius: .25rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.contact button:hover {
+  background: #b58a4e;
+}
+
+/* -------------------------------------------------
+   FOOTER
+   ------------------------------------------------- */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: .875rem;
+  color: #777;
+}
