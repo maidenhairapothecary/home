@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maidenhair Apothecary</title>
+
+  <!-- SEO meta -->
+  <meta name="description"
+        content="Maidenhair Apothecary – handcrafted herbal formulas, quality‑tested ingredients, and personalized wellness consultations.">
+  <link rel="canonical" href="https://maidenhairapothecary.com/">
+
+  <!-- Favicons -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+  <header class="hero">
+    <picture>
+      <!-- Optional hero image – replace with your own -->
+      <source srcset="/hero.webp" type="image/webp">
+      <img src="/hero.jpg" alt="Herbal tincture bottles on a wooden table">
+    </picture>
+    <div class="hero__overlay">
+      <h1>Maidenhair Apothecary</h1>
+      <p class="tagline">Ancient wisdom, modern purity.</p>
+      <a href="#contact" class="cta-button">Get in Touch</a>
+    </div>
+  </header>
+
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>
+      At Maidenhair Apothecary we blend centuries‑old herbal traditions with rigorous
+      quality‑control standards. Every formula is crafted from ethically sourced botanicals,
+      tested for potency, and tailored to individual needs.
+    </p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact</h2>
+    <p>
+      <strong>Phone:</strong> <a href="tel:+15551234567">+1 555‑123‑4567</a><br>
+      <strong>Email:</strong> <a href="mailto:info@maidenhairapothecary.com">info@maidenhairapothecary.com</a><br>
+      <strong>Address:</strong> 123 Greenleaf Lane, Portland, OR 97201, USA
+    </p>
+
+    <!-- Simple contact form – will post to a Vercel serverless function later -->
+    <form id="contact-form" method="POST" action="/api/contact">
+      <label>
+        Name<br>
+        <input type="text" name="name" required>
+      </label>
+      <label>
+        Email<br>
+        <input type="email" name="email" required>
+      </label>
+    <label>
+        Message<br>
+        <textarea name="message" rows="4" required></textarea>
+      </label>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Maidenhair Apothecary – All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Insert current year automatically
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
